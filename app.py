@@ -1,4 +1,3 @@
-# app.py — Daily Finance Challenge (per-day JSON • Tabs UI • early-finish on full progress)
 # Run:
 #   pip install streamlit pandas
 #   streamlit run app.py
@@ -14,8 +13,7 @@ import html
 QUESTION_FILE = "question_bank.json"
 DEMO_DATE = dt.date(2025, 10, 5)  # locked demo date
 
-# ---- Unit/Theme/Scoring ----
-UNIT_NAME = "October • Money Basics"
+UNIT_NAME = "October: Money Basics"
 PRIMARY = "#22c55e"   # green
 PRIMARY_DARK = "#16a34a"
 BG = "#f8fafc"
@@ -29,11 +27,10 @@ AMBER = "#f59e0b"
 POINTS_CORRECT = 10
 POINTS_CORRECT_HINT = 5
 POINTS_PERFECT_BONUS = 20
-PROGRESS_FINISH_PER_Q = 6  # bonus per remaining question if you fill the progress bar early
+PROGRESS_FINISH_PER_Q = 6 #bonus
 
-st.set_page_config(page_title="Daily Finance Challenge", page_icon="🧠", layout="wide")
+st.set_page_config(page_title="Daily Finance Challenge", layout="wide")
 
-# ---------------------------- Styling ----------------------------
 st.markdown(f"""
 <style>
 :root{{
@@ -59,7 +56,6 @@ html, body, [data-testid="stAppViewContainer"]{{ background: var(--bg); }}
 }}
 .stButton>button{{ border-radius:12px; border:1px solid var(--border); background:#fff; color:#0b0f10; }}
 .stButton>button:hover{{ border-color:var(--green); background:#f8fff9; }}
-/* primary buttons look neutral; we style specific ones via classes below */
 .stButton>button[kind="primary"]{{ background:#fff !important; color:#0b0f10 !important; }}
 
 .progress-wrap{{ background:var(--card); border:1px solid var(--border); border-radius:14px; padding:12px 16px; }}
@@ -74,7 +70,6 @@ html, body, [data-testid="stAppViewContainer"]{{ background: var(--bg); }}
 .stats-band{{ background:#fff; border:1px solid var(--border); border-radius:14px; padding:10px 14px; }}
 .tab-title{{ font-weight:600; margin-bottom:0.5rem; }}
 
-/* === Nuke stray white circles / bullets everywhere === */
 /* Global list reset */
 ul, ol {{ list-style: none !important; margin: 0 !important; padding-left: 0 !important; }}
 li {{ list-style: none !important; }}
@@ -98,15 +93,12 @@ li::marker {{ content: "" !important; }}
 [data-testid="stMarkdownContainer"] h5 svg,
 [data-testid="stMarkdownContainer"] h6 svg {{ display: none !important; }}
 
-/* Ensure header band never shows list markers */
 .header-band, .header-band * {{ list-style: none !important; }}
 h1, h2, h3, h4, h5, h6 {{ list-style-type: none !important; }}
 </style>
 """, unsafe_allow_html=True)
 
 
-
-# ---------------------------- Data Models ----------------------------
 @dataclass
 class QAResult:
     qid: str
@@ -147,13 +139,10 @@ class PlaySession:
     progress_visual: float = 0.0
     start_ts: Optional[dt.datetime] = None
     end_ts: Optional[dt.datetime] = None
-    finished_by_progress: bool = False  # NEW: whether day ended because progress reached max
+    finished_by_progress: bool = False  #check if day was done by progress
 
-# ---------------------------- Load JSON (months → days) ----------------------------
+#load question bank
 def load_bank(path: str) -> Dict[str, Any]:
-    """Loads per-month → per-day structure:
-       { "months": { "October": { "days": { "01": [..10 qs..], ... }}, ... } }
-    """
     if not os.path.exists(path):
         st.error(f"Question file `{path}` not found."); st.stop()
     try:
@@ -167,16 +156,16 @@ def load_bank(path: str) -> Dict[str, Any]:
 MONTH_BANK = load_bank(QUESTION_FILE)
 
 def get_day_questions(d: dt.date) -> List[Dict[str, Any]]:
-    month = d.strftime("%B")   # e.g., "October"
-    day = d.strftime("%d")     # e.g., "05"
+    month = d.strftime("%B")   
+    day = d.strftime("%d")     
     month_obj = MONTH_BANK.get(month, {})
     days = month_obj.get("days", {})
     qs = days.get(day, [])
     return qs
 
-# ---------------------------- Text Cleanup ----------------------------
-_ZW_CHARS = r"[\u200B-\u200D\uFEFF]"  # zero-width space/joiners & BOM
-_CTRL_CHARS = r"[\u0000-\u001F\u007F]"  # control chars
+#clean text
+_ZW_CHARS = r"[\u200B-\u200D\uFEFF]"  
+_CTRL_CHARS = r"[\u0000-\u001F\u007F]"  
 
 def normalize_unicode(s: str) -> str:
     try:
@@ -185,16 +174,14 @@ def normalize_unicode(s: str) -> str:
         return s
 
 def clean_text(s: str) -> str:
-    """Robust cleanup: normalize unicode, drop zero-width/control chars, collapse whitespace,
-       and fix spacing around punctuation."""
     if not isinstance(s, str): return s
     s = normalize_unicode(s)
     s = re.sub(_ZW_CHARS, "", s)
     s = re.sub(_CTRL_CHARS, " ", s)
-    s = re.sub(r"\s+", " ", s)          # collapse newlines/tabs/multiple spaces
-    s = re.sub(r"\s*,\s*", ", ", s)     # normalize comma spacing
-    s = re.sub(r"\s+\.", ".", s)        # remove space before period
-    s = s.replace(" ,", ",")            # stray space before comma
+    s = re.sub(r"\s+", " ", s)          
+    s = re.sub(r"\s*,\s*", ", ", s)     
+    s = re.sub(r"\s+\.", ".", s)        
+    s = s.replace(" ,", ",")            
     return s.strip()
 
 def sanitize_question(q: Dict[str, Any]) -> Dict[str, Any]:
@@ -209,14 +196,13 @@ def sanitize_question(q: Dict[str, Any]) -> Dict[str, Any]:
         q["answer"] = clean_text(q["answer"])
     return q
 
-# ---------------------------- Answer Checking ----------------------------
 def norm(s:str)->str: return s.strip().lower()
 def check_numeric_text(u_text: str, a: float, t: float) -> bool:
     try:
         if u_text is None: return False
         u_text = u_text.strip()
         if u_text == "": return False
-        val = float(u_text.replace(",", ""))  # allow "1,200"
+        val = float(u_text.replace(",", ""))  
         return abs(val - float(a)) <= float(t)
     except Exception:
         return False
@@ -225,7 +211,7 @@ def check_mc(u:Optional[str], a:str)->bool: return (u or "")==a
 def check_tf(u:Optional[str], a:str)->bool: return (u or "")==a
 def check_fib(u:str, a:str)->bool: return norm(u)==norm(a)
 
-# ---------------------------- State Helpers ----------------------------
+#states
 def get_save()->SaveState:
     if "save" not in st.session_state: st.session_state.save = SaveState()
     return st.session_state.save
@@ -245,12 +231,11 @@ def update_streak_with_freeze(save:SaveState, playing_date:dt.date):
         if save.streak_freezes > 0:
             save.streak_freezes -= 1
             save.streak += 1
-            st.toast("Streak Freeze used! 🔒🔥", icon="🧊")
+            st.toast("Streak Freeze used!")
         else:
             save.streak = 1
     save.last_played = playing_date.isoformat()
 
-# ---------------------------- Demo Leaderboards ----------------------------
 FAKE_GLOBAL = []
 FAKE_CLASSROOMS = {}
 
@@ -259,7 +244,6 @@ def gen_room_code()->str:
     return "".join(random.choice(alphabet) for _ in range(6))
 
 def class_roster_for(code:str)->List[Dict[str,Any]]:
-    # No demo classmates; return empty. (Real impl would fetch from a backend.)
     return []
 
 def render_leaderboard(title:str, rows:List[Dict[str,Any]]):
@@ -277,25 +261,23 @@ def render_leaderboard(title:str, rows:List[Dict[str,Any]]):
     )
 
 
-# ---------------------------- Header ----------------------------
 save = get_save()
 colL,colR=st.columns([2,1], gap="large")
 with colL:
     st.markdown("<div class='header-band'>", unsafe_allow_html=True)
     st.markdown(f"#### Unit: {UNIT_NAME}")
-    st.markdown("### 🧠 Daily Finance Challenge")
+    st.markdown("### Daily Finance Challenge")
     st.markdown("Daily sets that ramp from intro → advanced across each month’s unit.")
     st.markdown("</div>", unsafe_allow_html=True)
 with colR:
     st.markdown("<div class='stats-band'>", unsafe_allow_html=True)
     st.caption("Today")
-    st.write(f"🗓️ **{DEMO_DATE.strftime('%B %d, %Y')}**")
+    st.write(f" **{DEMO_DATE.strftime('%B %d, %Y')}**")
     c1,c2 = st.columns(2)
     c1.metric("Total Points", save.total_points)
     c2.metric("Streak", save.streak or 0)
     st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------------------------- Session Init ----------------------------
 def get_session() -> PlaySession:
     if "play" not in st.session_state:
         qs = [sanitize_question(q) for q in get_day_questions(DEMO_DATE)]
@@ -307,12 +289,10 @@ def get_session() -> PlaySession:
 
 play = get_session()
 
-# ---------------------------- Tabs ----------------------------
 tab_daily, tab_leader, tab_groups, tab_profile = st.tabs(
-    ["🧩 Daily Questions", "🏆 Leaderboards", "👥 Groups", "👤 Profile"]
+    ["Daily Questions", "🏆 Leaderboards", "👥 Groups", "👤 Profile"]
 )
 
-# ============================ DAILY TAB ============================
 with tab_daily:
     m1,m2,m3,m4=st.columns(4)
     m1.metric("Question", f"{min(play.idx+1, len(play.questions))} / {len(play.questions)}")
@@ -343,7 +323,6 @@ with tab_daily:
     }
 
     def finish_day_by_progress_if_needed():
-        """If progress bar filled, mark the day complete and grant a bonus for remaining questions."""
         if not play.completed and play.progress_visual >= 1.0:
             remaining = max(0, len(play.questions) - play.answered_count)
             bonus = remaining * PROGRESS_FINISH_PER_Q
@@ -360,17 +339,17 @@ with tab_daily:
         correct_count=sum(1 for r in play.results if r.correct)
         total_time=int((play.end_ts - play.start_ts).total_seconds()) if (play.start_ts and play.end_ts) else 0
         end_reason = " (progress finish)" if getattr(play, "finished_by_progress", False) else ""
-        st.success(f"🎉 Daily set complete{end_reason}!")
+        st.success(f"Daily set complete{end_reason}!")
         st.subheader(f"Score: {play.score_today}  •  Correct: {correct_count}/{len(play.questions)}  •  Time: {total_time}s")
 
         if st.session_state.get("recorded_today") != play.date.isoformat():
             update_streak_with_freeze(save, play.date)
             for r in play.results: add_cat_stat(r.category, r.correct)
-            # Only award perfect bonus if ALL questions answered and ALL correct
+
             if (not play.finished_by_progress) and correct_count==len(play.questions):
                 play.score_today += POINTS_PERFECT_BONUS
                 save.badges["perfect_day"]=True
-                st.toast(f"Perfect Day! +{POINTS_PERFECT_BONUS} bonus", icon="🎉")
+                st.toast(f"Perfect Day! +{POINTS_PERFECT_BONUS} bonus")
             if save.streak>=5: save.badges["streak_5"]=True
             if save.streak>=10: save.badges["streak_10"]=True
             if play.score_today>=100: save.badges["centurion"]=True
@@ -385,7 +364,7 @@ with tab_daily:
             st.session_state["recorded_today"] = play.date.isoformat()
 
         for r in play.results:
-            icon="✅" if r.correct else "❌"
+            icon="Correct" if r.correct else "Incorrect"
             with st.expander(f"{icon} [{r.category}] {r.qid} • Your answer: {r.user_answer} • {int(r.seconds)}s"):
                 st.markdown(r.explain)
 
@@ -411,7 +390,7 @@ with tab_daily:
             choice=st.radio("Choose one:", q["choices"], index=None, key=f"mc_{q['id']}")
             c1, c2 = st.columns([1,1])
             with c1:
-                if st.button("💡 Hint", key=f"hint_{play.idx}", use_container_width=True):
+                if st.button("Hint", key=f"hint_{play.idx}", use_container_width=True):
                     if not play.answered:
                         st.info(HINTS.get(q["category"], "Think it through carefully.")); play.used_hint=True
             with c2:
@@ -423,7 +402,7 @@ with tab_daily:
             num_text = st.text_input("Enter a number:", value="", placeholder="e.g., 1200 or 12.5")
             c1, c2 = st.columns([1,1])
             with c1:
-                if st.button("💡 Hint", key=f"hint_{play.idx}", use_container_width=True):
+                if st.button("Hint", key=f"hint_{play.idx}", use_container_width=True):
                     if not play.answered:
                         st.info(HINTS.get(q["category"], "Think it through carefully.")); play.used_hint=True
             with c2:
@@ -441,7 +420,7 @@ with tab_daily:
             tf=st.radio("True or False", ["True","False"], index=None, key=f"tf_{q['id']}")
             c1, c2 = st.columns([1,1])
             with c1:
-                if st.button("💡 Hint", key=f"hint_{play.idx}", use_container_width=True):
+                if st.button("Hint", key=f"hint_{play.idx}", use_container_width=True):
                     if not play.answered:
                         st.info(HINTS.get(q["category"], "Think it through carefully.")); play.used_hint=True
             with c2:
@@ -453,7 +432,7 @@ with tab_daily:
             text=st.text_input("Type your answer:", value="", placeholder="Type a single word or short phrase", key=f"fib_{q['id']}")
             c1, c2 = st.columns([1,1])
             with c1:
-                if st.button("💡 Hint", key=f"hint_{play.idx}", use_container_width=True):
+                if st.button("Hint", key=f"hint_{play.idx}", use_container_width=True):
                     if not play.answered:
                         st.info(HINTS.get(q["category"], "Think it through carefully.")); play.used_hint=True
             with c2:
@@ -467,11 +446,11 @@ with tab_daily:
         if submitted and not play.answered:
             q_time=(dt.datetime.now()-q_start).total_seconds()
             if got_right and not play.used_hint:
-                play.score_today += POINTS_CORRECT; st.success(f"✅ Correct! +{POINTS_CORRECT}")
+                play.score_today += POINTS_CORRECT; st.success(f"Correct! +{POINTS_CORRECT}")
             elif got_right and play.used_hint:
-                play.score_today += POINTS_CORRECT_HINT; st.success(f"✅ Correct (with hint)! +{POINTS_CORRECT_HINT}")
+                play.score_today += POINTS_CORRECT_HINT; st.success(f"Correct (with hint)! +{POINTS_CORRECT_HINT}")
             else:
-                st.error("❌ Incorrect.")
+                st.error("Incorrect.")
             st.info(q["explain"])
 
             play.results.append(QAResult(qid=q["id"], category=q["category"], correct=got_right,
@@ -484,15 +463,14 @@ with tab_daily:
                 play.correct_streak += 1
                 boost = 1.0 if play.correct_streak==1 else 1.5 if play.correct_streak==2 else 1.8 if play.correct_streak==3 else 2.0
                 play.progress_visual = min(1.0, play.progress_visual + (1.0/len(play.questions))*boost)
-                st.toast(f"{play.correct_streak} in a row! 🔥", icon="🔥")
+                st.toast(f"{play.correct_streak} in a row!", icon="")
             else:
                 play.correct_streak = 0
                 play.progress_visual = min(1.0, play.progress_visual + (1.0/len(play.questions)))
 
-            # NEW: End the day immediately if progress bar is full
             finish_day_by_progress_if_needed()
 
-        # Single-click Next, with immediate rerun (only if not finished by progress)
+        # Click next
         if play.answered and not play.completed:
             next_btn = st.container()
             with next_btn:
@@ -504,7 +482,7 @@ with tab_daily:
                         # Finished by answering all questions
                         if sum(1 for r in play.results if r.correct)==len(play.questions):
                             play.score_today += POINTS_PERFECT_BONUS
-                            st.toast(f"Perfect Day! +{POINTS_PERFECT_BONUS} bonus", icon="🎉")
+                            st.toast(f"Perfect Day! +{POINTS_PERFECT_BONUS} bonus", icon="")
                         play.completed=True; play.end_ts=dt.datetime.now(); st.balloons()
                         st.rerun()
                     else:
@@ -512,7 +490,6 @@ with tab_daily:
 
         st.markdown("</div>", unsafe_allow_html=True)
 
-# ============================ LEADERBOARDS TAB ============================
 with tab_leader:
     st.markdown("<p class='tab-title'>Compare with others</p>", unsafe_allow_html=True)
     # If the user already completed, show today's stats summary up top
@@ -537,7 +514,6 @@ with tab_leader:
     else:
         st.info("Join or create a classroom in the **Groups** tab to see a classroom leaderboard.")
 
-# ============================ GROUPS TAB ============================
 with tab_groups:
     st.markdown("<p class='tab-title'>Create or join a classroom</p>", unsafe_allow_html=True)
     col1, col2 = st.columns([1,1])
