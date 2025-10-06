@@ -1,0 +1,3707 @@
+{
+  "months": {
+    "January": {
+      "days": {}
+    },
+    "February": {
+      "days": {}
+    },
+    "March": {
+      "days": {}
+    },
+    "April": {
+      "days": {}
+    },
+    "May": {
+      "days": {}
+    },
+    "June": {
+      "days": {}
+    },
+    "July": {
+      "days": {}
+    },
+    "August": {
+      "days": {}
+    },
+    "September": {
+      "days": {}
+    },
+    "October": {
+      "days": {
+        "01": [
+          {
+            "id": "scams_e_001",
+            "type": "mc",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Text: “URGENT—verify now: bit.ly/xyz”. Safest action?",
+            "choices": [
+              "Tap link & enter info",
+              "Reply STOP",
+              "Ignore link; contact bank via official app/number",
+              "Forward to friends"
+            ],
+            "answer": "Ignore link; contact bank via official app/number",
+            "explain": "Links may be phishing; verify via trusted channels."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "saving_e_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "Starting to save at 18 generally beats starting at 25 due to compounding.",
+            "answer": "True",
+            "explain": "More years invested → more time to compound."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          },
+          {
+            "id": "credit_e_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Limit $1,200, balance $360. Utilization (%)?",
+            "answer_num": 30,
+            "tolerance": 1,
+            "explain": "360/1200 × 100 = 30%."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          }
+        ],
+        "02": [
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "scams_e_001",
+            "type": "mc",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Text: “URGENT—verify now: bit.ly/xyz”. Safest action?",
+            "choices": [
+              "Tap link & enter info",
+              "Reply STOP",
+              "Ignore link; contact bank via official app/number",
+              "Forward to friends"
+            ],
+            "answer": "Ignore link; contact bank via official app/number",
+            "explain": "Links may be phishing; verify via trusted channels."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "saving_e_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "Starting to save at 18 generally beats starting at 25 due to compounding.",
+            "answer": "True",
+            "explain": "More years invested → more time to compound."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          }
+        ],
+        "03": [
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "saving_e_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "4% APY on $1,000 for one year (simple). Interest dollars?",
+            "answer_num": 40,
+            "tolerance": 1,
+            "explain": "$1,000 × 0.04 ≈ $40."
+          },
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "scams_e_002",
+            "type": "truefalse",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Legit companies demand gift cards to prevent ‘account closure’.",
+            "answer": "False",
+            "explain": "Gift card demand is a classic scam sign."
+          },
+          {
+            "id": "invest_e_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Which is more diversified?",
+            "choices": [
+              "Total-market index fund",
+              "One tech stock",
+              "Two meme coins",
+              "Cash only"
+            ],
+            "answer": "Total-market index fund",
+            "explain": "Index funds spread risk across many companies."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          }
+        ],
+        "04": [
+          {
+            "id": "saving_e_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "Starting to save at 18 generally beats starting at 25 due to compounding.",
+            "answer": "True",
+            "explain": "More years invested → more time to compound."
+          },
+          {
+            "id": "loans_e_001",
+            "type": "fib",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "The amount you actually borrow is called the ________.",
+            "answer_text": "principal",
+            "explain": "Principal = borrowed amount; interest = cost."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "scams_e_001",
+            "type": "mc",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Text: “URGENT—verify now: bit.ly/xyz”. Safest action?",
+            "choices": [
+              "Tap link & enter info",
+              "Reply STOP",
+              "Ignore link; contact bank via official app/number",
+              "Forward to friends"
+            ],
+            "answer": "Ignore link; contact bank via official app/number",
+            "explain": "Links may be phishing; verify via trusted channels."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          }
+        ],
+        "05": [
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "saving_e_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "Starting to save at 18 generally beats starting at 25 due to compounding.",
+            "answer": "True",
+            "explain": "More years invested → more time to compound."
+          },
+          {
+            "id": "loans_e_001",
+            "type": "fib",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "The amount you actually borrow is called the ________.",
+            "answer_text": "principal",
+            "explain": "Principal = borrowed amount; interest = cost."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          },
+          {
+            "id": "scams_e_002",
+            "type": "truefalse",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Legit companies demand gift cards to prevent ‘account closure’.",
+            "answer": "False",
+            "explain": "Gift card demand is a classic scam sign."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          }
+        ],
+        "06": [
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "scams_e_002",
+            "type": "truefalse",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Legit companies demand gift cards to prevent ‘account closure’.",
+            "answer": "False",
+            "explain": "Gift card demand is a classic scam sign."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "saving_e_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "4% APY on $1,000 for one year (simple). Interest dollars?",
+            "answer_num": 40,
+            "tolerance": 1,
+            "explain": "$1,000 × 0.04 ≈ $40."
+          },
+          {
+            "id": "invest_e_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Which is more diversified?",
+            "choices": [
+              "Total-market index fund",
+              "One tech stock",
+              "Two meme coins",
+              "Cash only"
+            ],
+            "answer": "Total-market index fund",
+            "explain": "Index funds spread risk across many companies."
+          }
+        ],
+        "07": [
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "credit_e_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Limit $1,200, balance $360. Utilization (%)?",
+            "answer_num": 30,
+            "tolerance": 1,
+            "explain": "360/1200 × 100 = 30%."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "scams_e_002",
+            "type": "truefalse",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Legit companies demand gift cards to prevent ‘account closure’.",
+            "answer": "False",
+            "explain": "Gift card demand is a classic scam sign."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "loans_e_001",
+            "type": "fib",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "The amount you actually borrow is called the ________.",
+            "answer_text": "principal",
+            "explain": "Principal = borrowed amount; interest = cost."
+          },
+          {
+            "id": "saving_e_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "4% APY on $1,000 for one year (simple). Interest dollars?",
+            "answer_num": 40,
+            "tolerance": 1,
+            "explain": "$1,000 × 0.04 ≈ $40."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          }
+        ],
+        "08": [
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "saving_e_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "Starting to save at 18 generally beats starting at 25 due to compounding.",
+            "answer": "True",
+            "explain": "More years invested → more time to compound."
+          },
+          {
+            "id": "scams_e_002",
+            "type": "truefalse",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Legit companies demand gift cards to prevent ‘account closure’.",
+            "answer": "False",
+            "explain": "Gift card demand is a classic scam sign."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "loans_e_001",
+            "type": "fib",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "The amount you actually borrow is called the ________.",
+            "answer_text": "principal",
+            "explain": "Principal = borrowed amount; interest = cost."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "invest_e_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Which is more diversified?",
+            "choices": [
+              "Total-market index fund",
+              "One tech stock",
+              "Two meme coins",
+              "Cash only"
+            ],
+            "answer": "Total-market index fund",
+            "explain": "Index funds spread risk across many companies."
+          }
+        ],
+        "09": [
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          },
+          {
+            "id": "saving_e_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "4% APY on $1,000 for one year (simple). Interest dollars?",
+            "answer_num": 40,
+            "tolerance": 1,
+            "explain": "$1,000 × 0.04 ≈ $40."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "scams_e_001",
+            "type": "mc",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Text: “URGENT—verify now: bit.ly/xyz”. Safest action?",
+            "choices": [
+              "Tap link & enter info",
+              "Reply STOP",
+              "Ignore link; contact bank via official app/number",
+              "Forward to friends"
+            ],
+            "answer": "Ignore link; contact bank via official app/number",
+            "explain": "Links may be phishing; verify via trusted channels."
+          }
+        ],
+        "10": [
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "loans_e_002",
+            "type": "mc",
+            "category": "loans",
+            "difficulty": 1,
+            "prompt": "A fixed-rate loan’s interest rate…",
+            "choices": [
+              "Changes randomly",
+              "Stays the same",
+              "Doubles yearly",
+              "Only applies in December"
+            ],
+            "answer": "Stays the same",
+            "explain": "Fixed-rate = constant interest rate."
+          },
+          {
+            "id": "scams_e_001",
+            "type": "mc",
+            "category": "scams",
+            "difficulty": 1,
+            "prompt": "Text: “URGENT—verify now: bit.ly/xyz”. Safest action?",
+            "choices": [
+              "Tap link & enter info",
+              "Reply STOP",
+              "Ignore link; contact bank via official app/number",
+              "Forward to friends"
+            ],
+            "answer": "Ignore link; contact bank via official app/number",
+            "explain": "Links may be phishing; verify via trusted channels."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "saving_e_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 1,
+            "prompt": "4% APY on $1,000 for one year (simple). Interest dollars?",
+            "answer_num": 40,
+            "tolerance": 1,
+            "explain": "$1,000 × 0.04 ≈ $40."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "credit_e_002",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 1,
+            "prompt": "Keeping utilization under 30% is generally good for credit health.",
+            "answer": "True",
+            "explain": "Lower utilization is typically better."
+          },
+          {
+            "id": "invest_e_002",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 1,
+            "prompt": "Higher expected return usually comes with…",
+            "choices": [
+              "Lower risk",
+              "No risk",
+              "Higher risk",
+              "Guaranteed gains"
+            ],
+            "answer": "Higher risk",
+            "explain": "Risk–return tradeoff."
+          }
+        ],
+        "11": [
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "invest_m_001",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Dollar-cost averaging invests a fixed amount on a schedule.",
+            "answer": "True",
+            "explain": "Helps reduce timing risk."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          }
+        ],
+        "12": [
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "invest_m_002",
+            "type": "numeric",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Invest $100/month for 12 months (ignore growth). Total contributed?",
+            "answer_num": 1200,
+            "tolerance": 1,
+            "explain": "$100 × 12 = $1,200."
+          }
+        ],
+        "13": [
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "credit_m_001",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Which action MOST improves credit over time?",
+            "choices": [
+              "Closing your oldest card",
+              "Paying on time consistently",
+              "Maxing out cards occasionally",
+              "Applying for many cards quickly"
+            ],
+            "answer": "Paying on time consistently",
+            "explain": "Payment history carries high weight."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "invest_m_001",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Dollar-cost averaging invests a fixed amount on a schedule.",
+            "answer": "True",
+            "explain": "Helps reduce timing risk."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          }
+        ],
+        "14": [
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "loans_m_002",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Simple interest: $1,000 at 6% for 1 year. Interest $?",
+            "answer_num": 60,
+            "tolerance": 1,
+            "explain": "1,000 × 0.06 = 60."
+          },
+          {
+            "id": "invest_m_003",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "A broad index fund mainly reduces which risk?",
+            "choices": [
+              "Market risk",
+              "Company-specific risk",
+              "No risk at all",
+              "Liquidity risk"
+            ],
+            "answer": "Company-specific risk",
+            "explain": "Diversification reduces idiosyncratic/firm risk."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          }
+        ],
+        "15": [
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "credit_m_001",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Which action MOST improves credit over time?",
+            "choices": [
+              "Closing your oldest card",
+              "Paying on time consistently",
+              "Maxing out cards occasionally",
+              "Applying for many cards quickly"
+            ],
+            "answer": "Paying on time consistently",
+            "explain": "Payment history carries high weight."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "loans_m_002",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Simple interest: $1,000 at 6% for 1 year. Interest $?",
+            "answer_num": 60,
+            "tolerance": 1,
+            "explain": "1,000 × 0.06 = 60."
+          },
+          {
+            "id": "invest_m_003",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "A broad index fund mainly reduces which risk?",
+            "choices": [
+              "Market risk",
+              "Company-specific risk",
+              "No risk at all",
+              "Liquidity risk"
+            ],
+            "answer": "Company-specific risk",
+            "explain": "Diversification reduces idiosyncratic/firm risk."
+          },
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          }
+        ],
+        "16": [
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "invest_m_002",
+            "type": "numeric",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Invest $100/month for 12 months (ignore growth). Total contributed?",
+            "answer_num": 1200,
+            "tolerance": 1,
+            "explain": "$100 × 12 = $1,200."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          }
+        ],
+        "17": [
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "invest_m_001",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Dollar-cost averaging invests a fixed amount on a schedule.",
+            "answer": "True",
+            "explain": "Helps reduce timing risk."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "paycheck_e_001",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Gross pay $600, withholdings $90. Net pay?",
+            "choices": [
+              "$510",
+              "$600",
+              "$690",
+              "$90"
+            ],
+            "answer": "$510",
+            "explain": "Net = gross − withholdings = 600 − 90 = 510."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          }
+        ],
+        "18": [
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "invest_m_001",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Dollar-cost averaging invests a fixed amount on a schedule.",
+            "answer": "True",
+            "explain": "Helps reduce timing risk."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          }
+        ],
+        "19": [
+          {
+            "id": "budget_e_002",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "You take home $450 this week. Under 50/30/20, how many DOLLARS go to savings?",
+            "answer_num": 90,
+            "tolerance": 1,
+            "explain": "20% × 450 = $90."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "invest_m_001",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "Dollar-cost averaging invests a fixed amount on a schedule.",
+            "answer": "True",
+            "explain": "Helps reduce timing risk."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          }
+        ],
+        "20": [
+          {
+            "id": "invest_m_003",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 2,
+            "prompt": "A broad index fund mainly reduces which risk?",
+            "choices": [
+              "Market risk",
+              "Company-specific risk",
+              "No risk at all",
+              "Liquidity risk"
+            ],
+            "answer": "Company-specific risk",
+            "explain": "Diversification reduces idiosyncratic/firm risk."
+          },
+          {
+            "id": "loans_m_001",
+            "type": "truefalse",
+            "category": "loans",
+            "difficulty": 2,
+            "prompt": "Paying above the minimum can reduce total interest paid.",
+            "answer": "True",
+            "explain": "Extra principal shortens schedule and cuts interest."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "paycheck_e_002",
+            "type": "truefalse",
+            "category": "paycheck",
+            "difficulty": 1,
+            "prompt": "Net pay is what you take home after taxes and withholdings.",
+            "answer": "True",
+            "explain": "Gross minus taxes/withholdings equals net pay."
+          },
+          {
+            "id": "budget_e_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 1,
+            "prompt": "Which is a WANT (not a need)?",
+            "choices": [
+              "Gym membership",
+              "Rent",
+              "Basic groceries",
+              "Bus pass"
+            ],
+            "answer": "Gym membership",
+            "explain": "Needs keep you safe/functional: housing, food, transport."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          }
+        ],
+        "21": [
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "saving_h_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "$2,000 grows at 5% annually for 2 years (compound). End balance?",
+            "answer_num": 2205,
+            "tolerance": 2,
+            "explain": "2000 × 1.05 × 1.05 = 2,205."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          }
+        ],
+        "22": [
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "invest_h_002",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Broad diversification eliminates all market risk.",
+            "answer": "False",
+            "explain": "Systematic (market) risk remains."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "credit_m_001",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Which action MOST improves credit over time?",
+            "choices": [
+              "Closing your oldest card",
+              "Paying on time consistently",
+              "Maxing out cards occasionally",
+              "Applying for many cards quickly"
+            ],
+            "answer": "Paying on time consistently",
+            "explain": "Payment history carries high weight."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "credit_h_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "3 cards: limits 1000/2000/3000; balances 500/0/900. Overall utilization (%)?",
+            "answer_num": 23.33,
+            "tolerance": 0.5,
+            "explain": "Total bal 1400 / total limit 6000 ≈ 23.33%."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          }
+        ],
+        "23": [
+          {
+            "id": "saving_h_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "$2,000 grows at 5% annually for 2 years (compound). End balance?",
+            "answer_num": 2205,
+            "tolerance": 2,
+            "explain": "2000 × 1.05 × 1.05 = 2,205."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "credit_m_001",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Which action MOST improves credit over time?",
+            "choices": [
+              "Closing your oldest card",
+              "Paying on time consistently",
+              "Maxing out cards occasionally",
+              "Applying for many cards quickly"
+            ],
+            "answer": "Paying on time consistently",
+            "explain": "Payment history carries high weight."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "credit_h_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "3 cards: limits 1000/2000/3000; balances 500/0/900. Overall utilization (%)?",
+            "answer_num": 23.33,
+            "tolerance": 0.5,
+            "explain": "Total bal 1400 / total limit 6000 ≈ 23.33%."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          }
+        ],
+        "24": [
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "invest_h_002",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Broad diversification eliminates all market risk.",
+            "answer": "False",
+            "explain": "Systematic (market) risk remains."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          }
+        ],
+        "25": [
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "credit_h_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "3 cards: limits 1000/2000/3000; balances 500/0/900. Overall utilization (%)?",
+            "answer_num": 23.33,
+            "tolerance": 0.5,
+            "explain": "Total bal 1400 / total limit 6000 ≈ 23.33%."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "invest_h_002",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Broad diversification eliminates all market risk.",
+            "answer": "False",
+            "explain": "Systematic (market) risk remains."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          }
+        ],
+        "26": [
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "saving_h_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "$2,000 grows at 5% annually for 2 years (compound). End balance?",
+            "answer_num": 2205,
+            "tolerance": 2,
+            "explain": "2000 × 1.05 × 1.05 = 2,205."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "credit_h_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "3 cards: limits 1000/2000/3000; balances 500/0/900. Overall utilization (%)?",
+            "answer_num": 23.33,
+            "tolerance": 0.5,
+            "explain": "Total bal 1400 / total limit 6000 ≈ 23.33%."
+          },
+          {
+            "id": "budget_m_001",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Take-home $2,000/month. Needs total $1,200. Under 50/30/20, max WANTS dollars?",
+            "choices": [
+              "$300",
+              "$400",
+              "$600",
+              "$800"
+            ],
+            "answer": "$600",
+            "explain": "30% of $2,000 = $600 (but if needs >50%, wants must shrink)."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          }
+        ],
+        "27": [
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "credit_m_002",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Two cards: limits $1000 + $2000; balances $200 + $100. Overall utilization (%)?",
+            "answer_num": 10,
+            "tolerance": 1,
+            "explain": "Total bal 300 / total limit 3000 = 10%."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "budget_m_003",
+            "type": "truefalse",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "If your needs exceed 50% of income, you should cut wants below 30%.",
+            "answer": "True",
+            "explain": "Adjust wants when needs are high to still save."
+          }
+        ],
+        "28": [
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "paycheck_m_002",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "$18/hr × 20 hrs/week × 4 weeks. Monthly gross?",
+            "answer_num": 1440,
+            "tolerance": 1,
+            "explain": "18 × 20 × 4 = 1,440."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          }
+        ],
+        "29": [
+          {
+            "id": "paycheck_m_001",
+            "type": "fib",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "The form to set employer withholding is the ________.",
+            "answer_text": "W-4",
+            "explain": "W-4 guides withholding."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "budget_h_001",
+            "type": "numeric",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Income $2,400; needs $1,500; wants $700. Savings %?",
+            "answer_num": 8.33,
+            "tolerance": 0.5,
+            "explain": "Savings = 2400 − 1500 − 700 = 200; 200/2400 ≈ 8.33%."
+          },
+          {
+            "id": "invest_h_002",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Broad diversification eliminates all market risk.",
+            "answer": "False",
+            "explain": "Systematic (market) risk remains."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          }
+        ],
+        "30": [
+          {
+            "id": "invest_h_002",
+            "type": "truefalse",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Broad diversification eliminates all market risk.",
+            "answer": "False",
+            "explain": "Systematic (market) risk remains."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "saving_h_002",
+            "type": "numeric",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "$2,000 grows at 5% annually for 2 years (compound). End balance?",
+            "answer_num": 2205,
+            "tolerance": 2,
+            "explain": "2000 × 1.05 × 1.05 = 2,205."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "paycheck_h_001",
+            "type": "numeric",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Gross $3,000; 22% combined tax/withholdings. Approx net?",
+            "answer_num": 2340,
+            "tolerance": 5,
+            "explain": "3,000 × (1 − 0.22) = 2,340."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          },
+          {
+            "id": "saving_m_002",
+            "type": "fib",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Interest earned on principal + prior interest is ________ interest.",
+            "answer_text": "compound",
+            "explain": "Compound = interest on interest."
+          },
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "credit_h_001",
+            "type": "numeric",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "3 cards: limits 1000/2000/3000; balances 500/0/900. Overall utilization (%)?",
+            "answer_num": 23.33,
+            "tolerance": 0.5,
+            "explain": "Total bal 1400 / total limit 6000 ≈ 23.33%."
+          }
+        ],
+        "31": [
+          {
+            "id": "paycheck_m_003",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 2,
+            "prompt": "Which most directly lowers your net pay on a paycheck?",
+            "choices": [
+              "Higher gross pay",
+              "Lower withholding",
+              "Higher withholding",
+              "Fewer hours worked"
+            ],
+            "answer": "Higher withholding",
+            "explain": "More withheld → lower net (all else equal)."
+          },
+          {
+            "id": "invest_h_001",
+            "type": "mc",
+            "category": "investing",
+            "difficulty": 3,
+            "prompt": "Which portfolio has the LOWEST diversification?",
+            "choices": [
+              "S&P 500 index fund",
+              "One biotech stock",
+              "Target-date index fund",
+              "Total-world index fund"
+            ],
+            "answer": "One biotech stock",
+            "explain": "Single stock = concentrated risk."
+          },
+          {
+            "id": "credit_h_002",
+            "type": "mc",
+            "category": "credit",
+            "difficulty": 3,
+            "prompt": "Which hurts credit most if repeated?",
+            "choices": [
+              "One hard inquiry",
+              "Closing a new card",
+              "Late payments 30+ days",
+              "Using 40% utilization once"
+            ],
+            "answer": "Late payments 30+ days",
+            "explain": "Payment history weighs heavily; repeated lates are damaging."
+          },
+          {
+            "id": "budget_h_002",
+            "type": "mc",
+            "category": "budget",
+            "difficulty": 3,
+            "prompt": "Best first step when needs > 60% for several months?",
+            "choices": [
+              "Increase wants",
+              "Pause saving forever",
+              "Cut fixed expenses/add income",
+              "Open new card"
+            ],
+            "answer": "Cut fixed expenses/add income",
+            "explain": "Bring needs down and/or raise income to restore balance."
+          },
+          {
+            "id": "loans_h_001",
+            "type": "numeric",
+            "category": "loans",
+            "difficulty": 3,
+            "prompt": "Loan $5,000 at 10% simple interest for 3 years. Total interest $?",
+            "answer_num": 1500,
+            "tolerance": 2,
+            "explain": "5000 × 0.10 × 3 = 1,500."
+          },
+          {
+            "id": "credit_m_003",
+            "type": "truefalse",
+            "category": "credit",
+            "difficulty": 2,
+            "prompt": "Closing your oldest credit card can shorten your credit history length.",
+            "answer": "True",
+            "explain": "Length of credit history can drop when you close old accounts."
+          },
+          {
+            "id": "saving_m_001",
+            "type": "mc",
+            "category": "saving",
+            "difficulty": 2,
+            "prompt": "Best place for an emergency fund?",
+            "choices": [
+              "5-year CD",
+              "High-yield savings account",
+              "Stock index fund",
+              "Under a mattress"
+            ],
+            "answer": "High-yield savings account",
+            "explain": "Needs liquidity and low risk."
+          },
+          {
+            "id": "saving_h_001",
+            "type": "truefalse",
+            "category": "saving",
+            "difficulty": 3,
+            "prompt": "If inflation exceeds your savings APY, your real return is negative.",
+            "answer": "True",
+            "explain": "Real return ≈ nominal − inflation."
+          },
+          {
+            "id": "paycheck_h_002",
+            "type": "mc",
+            "category": "paycheck",
+            "difficulty": 3,
+            "prompt": "Most accurate statement about allowances/exemptions on W-4:",
+            "choices": [
+              "They set your tax rate",
+              "They influence withholding amount",
+              "They change your gross pay",
+              "They remove FICA"
+            ],
+            "answer": "They influence withholding amount",
+            "explain": "W-4 affects withholding, not tax brackets or gross."
+          },
+          {
+            "id": "budget_m_002",
+            "type": "fib",
+            "category": "budget",
+            "difficulty": 2,
+            "prompt": "Money set aside for unexpected expenses is an ________ fund.",
+            "answer_text": "emergency",
+            "explain": "Emergency fund covers sudden costs."
+          }
+        ]
+      }
+    },
+    "November": {
+      "days": {}
+    },
+    "December": {
+      "days": {}
+    }
+  }
+}
